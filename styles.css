@@ -1,0 +1,185 @@
+:root {
+    --cpink: #F28B82;
+--worange: #F6A74C;
+--black: #2E2E2E;
+--cream: #FFF4E6;
+--teal: #4C9E9E;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html {
+    background-color: var(--cream);
+    scroll-behavior: smooth;
+
+}
+
+nav > ul {  
+    list-style-type: none; 
+    display: flex; 
+    position: fixed;
+    justify-content: center; 
+    gap: 1rem;  
+    padding: 10px; 
+    width: fit-content; 
+    left: 25%; 
+    top:0; 
+    font-family: "Libre Baskerville"; 
+    z-index: 1000;
+} 
+
+
+#logo img {
+  height: 80px;  max-width: 100%;
+}
+
+a { text-decoration: none; 
+} 
+
+/*a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}*/
+
+/*#mobileMenu, #hamburger {
+    display: none;
+}*/
+
+#desktopMenu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem; 
+}
+
+body {
+    max-width: 1920px;
+}
+.menuItem {
+    margin: 0;
+}
+
+.section {
+    height: 150vh; 
+    width: 100%;
+    position: relative;
+    top: 5vh; font-family: "Libre Baskerville"
+} 
+/*NEED TO DO THIS!!!!!!!!!!!*/
+#hero 
+#mission
+#skills
+#experience
+#contact
+
+#button {
+    position: absolute; top: 5vh;
+}
+
+@media (max-width: 599px) {
+    #desktopMenu {
+        display: none;
+    }
+
+    #logo {
+       display: none;
+    }
+
+    #hamburger {
+        border: 1px solid white;
+        height: 3rem;
+        width: 3rem;
+        margin: 1rem auto;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .hamline {
+        width: 80%;
+        height: 1px;
+        padding: 0;
+        margin: 3px 0 3px 0;
+        background-color: white;
+    }
+
+    #mobileMenu {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        color: white;
+        background-color: var(--teal);
+        z-index: 10;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .200s ease-in-out;
+    }
+   
+    #mobileList {
+        list-style-type: none;
+        font-family: "Libre Baskerville"; 
+    }
+
+    .menuItem {
+        color: var(--black);
+        font-size: 2rem;
+        display: block;    
+        width: fit-content;
+        margin: 1rem auto;
+    }
+
+    .menuItem:last-child {
+        margin-bottom: 2rem;
+    }
+
+    body {
+        max-width: 1920px;
+    }
+    .menuItem {
+        margin: 10vh;
+    }
+
+}
+
+@media(min-width:600px) { 
+    #mobileMenu, #hamburger {
+        display: none;
+    }
+    #desktopMenu {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2rem; 
+    }
+
+    body {
+        max-width: 1920px;
+    }
+    .menuItem {
+        margin: 0;
+    }
+}
