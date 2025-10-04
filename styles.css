@@ -14,7 +14,7 @@
 
 
 html {
-    background-color: var(--cream);
+    /*background-color: var(--cream);*/
     scroll-behavior: smooth;
 
 }
@@ -32,7 +32,6 @@ nav > ul {
     font-family: "Libre Baskerville"; 
     z-index: 1000;
 } 
-
 
 #logo img {
   height: 80px;  max-width: 100%;
@@ -62,14 +61,14 @@ a:active {
   text-decoration: underline;
 }*/
 
-/*#mobileMenu, #hamburger {
+#mobileMenu, #hamburger {
     display: none;
-}*/
+}
 
 #desktopMenu {
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem; 
+    /*font-size: 0.2rem;*/
 }
 
 body {
@@ -132,7 +131,7 @@ body {
         justify-content: space-around;
         position: relative;
         color: white;
-        background-color: var(--teal);
+        background-color: var(--cream);
         z-index: 10;
         max-height: 0;
         opacity: 0;
@@ -140,17 +139,18 @@ body {
         transition: all .200s ease-in-out;
     }
    
-    #mobileList {
+    /*#mobileList {
         list-style-type: none;
         font-family: "Libre Baskerville"; 
-    }
+        text-align: center;
+    }*/
 
     .menuItem {
         color: var(--black);
         font-size: 2rem;
         display: block;    
         width: fit-content;
-        margin: 1rem auto;
+        margin: 2rem auto;
     }
 
     .menuItem:last-child {
@@ -160,22 +160,8 @@ body {
     body {
         max-width: 1920px;
     }
-    .menuItem {
-        margin: 10vh;
-    }
-
-}
 
 @media(min-width:600px) { 
-    #mobileMenu, #hamburger {
-        display: none;
-    }
-    #desktopMenu {
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2rem; 
-    }
-
     body {
         max-width: 1920px;
     }
