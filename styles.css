@@ -12,24 +12,9 @@
   font-style: normal;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
-nav > ul {  
-    list-style-type: none; 
-    display: flex; 
-    position: fixed;
-    justify-content: center; 
-    gap: 1rem;  
-    padding: 20px; 
-    width: fit-content; 
-    left: 25%; 
-    top:0; 
-    font-family: "Libre Baskerville"; 
-    z-index: 1000;
-} 
 
 #logo img {
   height: 80px;  max-width: 100%;
@@ -57,6 +42,17 @@ a:visited {
 #desktopMenu {
     display: flex;
     justify-content: space-around;
+    list-style-type: none; 
+    display: flex; 
+    position: fixed;
+    justify-content: center; 
+    gap: 1rem;  
+    padding: 20px; 
+    width: fit-content; 
+    left: 25%; 
+    top:0; 
+    font-family: "Libre Baskerville"; 
+    z-index: 1000;
 }
 
 #header {
@@ -146,7 +142,7 @@ body {
    
     .menuItem {
         color: var(--cream);
-        font-size: 2rem;
+        font-size: 1.5rem;
         display: block;    
         width: fit-content;
         margin: 2rem auto;
